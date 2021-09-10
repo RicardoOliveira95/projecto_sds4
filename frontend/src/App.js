@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 //import NavBar from "components/navBar";
 //import DataTable from "components/dataTable";
 //import ImgDsDark from 'assets/img/ds-dark.svg';
+//import BarChart from 'components/barChart';
+//import DonutChart from 'components/dntChart';
 
 class App extends Component {
   render() {
     return (
-      <div>
+    
+       <div>
+       <script href="C:/Users/Utilizador/Downloads/Todo-er-master/frontend/src/chrt.js"></script>
+       <div id="myGraph"></div>
+       <div id="dntChrt"></div>
       <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
         <div className="container">
           <nav className="my-2 my-md-0 mr-md-3">
@@ -15,7 +21,7 @@ class App extends Component {
         </div>
         <br></br>
         <div className="container">
-          <h1 className="text-primary">APP</h1>   
+          <h1 className="text-primary py-3">Dashboard Vendas</h1>   
       </div>
     </div>
     <div className="table-responsive">
@@ -110,3 +116,4 @@ class App extends Component {
 }
 
 export default App;
+  
