@@ -20,6 +20,8 @@ public class Seller {
 	
 	@OneToMany(mappedBy="seller")
 	private List<Sale> sales=new LinkedList();
+	
+	public Seller() {}
 
 	public Seller(long id,String name) {
 		this.name=name;
