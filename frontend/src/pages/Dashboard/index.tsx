@@ -1,4 +1,4 @@
-//import NavBar from "components/navBar";
+import NavBar from "components/navBar";
 //import DataTable from "components/dataTable";
 //import ImgDsDark from 'assets/img/ds-dark.svg';
 import BarChart from 'components/barChart';
@@ -8,14 +8,9 @@ const Dashboard=()=>{
 	return(
 		<div>
        <script href="C:/Users/Utilizador/Downloads/Todo-er-master/frontend/src/chrt.js"></script>
-       <div id="myGraph"></div>
-       <div id="dntChrt"></div>
+       
       <div className="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-light border-bottom shadow-sm">
-        <div className="container">
-          <nav className="my-2 my-md-0 mr-md-3">
-            <img src="https://raw.githubusercontent.com/devsuperior/sds4/516e3c1b2705ea72587ec19ac30002052dc4d3e2/_assets/ds-dark.svg" alt="DevSuperior" width="120" />
-          </nav>
-        </div>
+        <NavBar />
         <br></br>
         <div className="container">
           <h1 className="text-primary py-3">Dashboard Vendas</h1>   
