@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+//import React, { Component } from 'react'
 import Chart from "react-apexcharts"
 import axios from 'axios'
 import {BASE_URL} from 'utils/requests'
-import {SaleSum} from 'types/sale'
+import { SaleSum } from 'types/sale'
 
 type ChartData={
   labels: string[];
@@ -14,12 +14,12 @@ const DonutChart=()=>{
 let chartData: ChartData={labels: [],series: []};
 
 axios.get(BASE_URL+'/sales/sum-by-seller').then(res=>{
-  //const data= res.data as SaleSum[]
-  //const myLabels=data.map(x=> x.sellerName)
-  //const mySeries=data.map(x=> x.sum)
+  const data= res.data as SaleSum[];
+  const myLabels=data.map(x=> x.sellerName)
+  const mySeries=data.map(x=> x.sum)
 
-  //chartData={labels:myLabels,series:mySeries}
-  console.log(res.data)
+  chartData={labels:myLabels,series:mySeries}
+  console.log(chartData);
 })
 
   //const mockData = {
@@ -30,7 +30,7 @@ const options = {
     legend: {
         show: true
     }
-}
+};
 
   return(
   		<Chart 
@@ -40,6 +40,6 @@ const options = {
   			height="250"
   		/>
     );
-}
+};
 
 export default DonutChart;
