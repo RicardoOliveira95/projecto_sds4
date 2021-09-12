@@ -408,3 +408,4 @@ java.io.FileNotFoundException: C:\Users\Utilizador\.m2\repository\ch\qos\logback
 2021-09-09 00:40:50,648 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-09-09 00:40:50,648 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-09-09 00:40:50,648 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Utilizador\Downloads\Todo-er-master\backend\devendas\src\test\resources
+2021-09-11 15:47:39,272 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
