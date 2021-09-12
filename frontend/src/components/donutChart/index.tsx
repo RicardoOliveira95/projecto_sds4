@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Chart from "react-apexcharts";
 
 function DonutChart(){
   const mockData = {

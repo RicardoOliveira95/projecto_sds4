@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 //import NavBar from "components/navBar";
 //import DataTable from "components/dataTable";
 //import ImgDsDark from 'assets/img/ds-dark.svg';
-//import BarChart from 'components/barChart';
-//import DonutChart from 'components/dntChart';
+import BarChart from 'components/barChart';
+import DonutChart from 'components/donutChart';
 
 class App extends Component {
   render() {
@@ -24,6 +24,10 @@ class App extends Component {
           <h1 className="text-primary py-3">Dashboard Vendas</h1>   
       </div>
     </div>
+    <div className="row px-3">
+       <div className="col-sm-6"><h5>Sucesso</h5><BarChart /></div>
+       </div>
+       <div className="col-sm-6"><h5>Vendas</h5><DonutChart /></div>
     <div className="table-responsive">
     <table className="table table-striped table-sm">
         <thead>
