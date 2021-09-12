@@ -11,7 +11,7 @@ type ChartData={
 
 const DonutChart=()=>{
 
-//let chartData: ChartData={labels: [],series: []};
+let chartData: ChartData={labels: [],series: []};
 
 axios.get(BASE_URL+'/sales/sum-by-seller').then(res=>{
   //const data= res.data as SaleSum[]
